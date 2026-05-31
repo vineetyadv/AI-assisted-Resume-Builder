@@ -1,0 +1,10 @@
+target/
+*.class
+*.jar
+*.war
+
+# Keep the template, ignore the real config with secrets
+src/main/resources/application.properties
+
+.mvn/wrapper/maven-wrapper.jar
+.env

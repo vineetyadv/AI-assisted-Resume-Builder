@@ -1,0 +1,25 @@
+# Claude Code session data
+.claude/
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Frontend env (copy from .env.local.example)
+frontend/.env.local
+frontend/.env*.local
+
+# Backend secrets (already in backend/.gitignore but listed here for clarity)
+backend/src/main/resources/application.properties
+
+# Node
+frontend/node_modules/
+frontend/.next/
+
+# Java / Maven
+backend/target/

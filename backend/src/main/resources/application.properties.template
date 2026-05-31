@@ -1,0 +1,22 @@
+spring.application.name=resume-builder-backend
+server.port=8080
+
+# AI Provider — pick one and fill in the key
+#
+# Option A: Groq (free tier: 14,400 req/day) — https://console.groq.com/keys
+spring.ai.openai.api-key=YOUR_GROQ_API_KEY_HERE
+spring.ai.openai.base-url=https://api.groq.com/openai
+spring.ai.openai.chat.options.model=llama-3.3-70b-versatile
+#
+# Option B: Google Gemini via OpenAI-compatible API — https://aistudio.google.com/apikey
+# spring.ai.openai.api-key=YOUR_GOOGLE_AI_STUDIO_KEY_HERE
+# spring.ai.openai.base-url=https://generativelanguage.googleapis.com/v1beta/openai
+# spring.ai.openai.chat.options.model=gemini-2.0-flash
+spring.ai.openai.chat.options.temperature=0.4
+
+# Allow multipart uploads up to 10 MB for PDF ingestion
+spring.servlet.multipart.max-file-size=10MB
+spring.servlet.multipart.max-request-size=10MB
+
+# Logging
+logging.level.org.springframework.ai=DEBUG
